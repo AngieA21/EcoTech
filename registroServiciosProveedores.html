@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registro de Servicios para Proveedores</title>
+    <link rel=stylesheet href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="css/registroServicioProveedores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav id="main_nav">
+            <div class="left">
+                <img src="img/index.png" alt="Error" width="80" height="60">
+            </div>
+            <div class="right" id="links">
+                <a href="#"> Contacto</a>
+                <a href="#"> Acceso</a>
+                <a href="#">Registro</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="Registro_Servicios_Proveedores.html">
+                <fieldset class="box">
+                    <h1>Registro de Servicios para Proveedores</h1>
+                    <p id="inst">Instrucciones:</p>
+                    <label for="servicios" class="label"> Seleccione el tipo de servicio</label>
+                    <select name="servicios" id="animales" required>
+                        <option value="belleza">Belleza y Aseo de Mascotas</option>
+                        <option value="alimentos">Alimentación</option>
+                        <option value="salud">Salud y Veterinaria</option>
+                        <option value="hotel">Acompañamiento de Mascotas y Hotelería</option>
+                        <option value="ropa">Ropa y Accesorios</option>
+                    </select>
+                    <label for="description" class="label">Descripción del Servicio</label>
+                    <input type="text" id="description" required size="90px">
+                    <label for="direccion" class="label">Dirección</label>
+                    <input type="text" id="direccion" size="90px">
+                    <label for="provincia" class="label" id="provincia-display">Provincia</label>
+                    <select name="provincia" id="provincia" required>
+                            <option value="1">San José</option>
+                            <option value="2">Heredia</option> 
+                            <option value="3">Cartago</option> 
+                            <option value="4">Alajuela</option> 
+                            <option value="5">Limón</option> 
+                            <option value="6">Puntarenas</option> 
+                            <option value="7">Guanacaste</option>     
+                        </select>
+                    <label for="canton" class="label" id="canton-display">Cantón</label>
+                    <input type="text" id="canton" required size="45px">
+                    <label for="horario" class="label">Horario del servicio</label>
+                    <input type="time" id="horario" required size="45px">
+                    <label for="email" class="label">Correo electrónico</label>
+                    <input type="email" id="email" required size="45px">
+                    <label for="telefono" class="label">Teléfono</label>
+                    <input type="tel" id="telefono" size="45px">
+                    <label for="social" class="label">Enlaces a redes sociales</label>
+                    <label for="url" class="label">Facebook</label>
+                    <input type="url" id="social" size="45px">
+                    <label for="url" class="label">Whatsapp</label>
+                    <input type="url" id="social" size="45px">
+                    <label for="url" class="label">Instagram</label>
+                    <input type="url" id="social" size="45px">
+                    <label for=" price" class="label">Precio</label>
+                    <input type="number" id="price" min="0 " max="1000000000000 " required size="45px">
+                    <label for="img" class="label">Insertar fotos</label>
+                    <input type="file" id="img" accept="image/*" size="45px">
+                    <button type="button">Guardar</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="left" id="copyrights">
+            <p>©2021, MiMascota.cr</p>
+            <p>San José, Costa Rica</p>
+            <p>Desarrollado por EcoTech</p>
+        </div>
+        <nav id="footer-nav">
+            <div class="right">
+                <a href="https://web.whatsapp.com" class="fa fa-whatsapp">
+                    <!--img src="img/whatsapp.png " alt="Error " width="45 " height="45 "-->
+                </a>
+                <a href="https://www.facebook.com" class="fa fa-facebook">
+                    <!--img src="img/facebook.png " alt="Error " width="45 " height="45 "-->
+                </a>
+                <a href="https://www.instagram.com" class="fa fa-instagram">
+                    <!--img src="img/instagram.webp " alt="Error " width="40 " height="40 "-->
+                </a>
+                <a href="https://www.pinterest.com" class="fa fa-pinterest">
+                    <!--img src="img/pinterest.png " alt="Error " width="45 " height="45 "-->
+                </a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin">
+                    <!--img src="img/linkedin.png " alt="Error " width="40 " height="40 "-->
+                </a>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
